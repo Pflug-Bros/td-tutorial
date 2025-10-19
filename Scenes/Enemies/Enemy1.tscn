@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://csy3tj607ywjt"]
+
+[ext_resource type="Texture2D" uid="uid://gjp1rfhvxn5" path="res://Assets/PNG/Default size/towerDefense_tile245.png" id="1_er5oi"]
+[ext_resource type="Script" uid="uid://cfju5qkocq1dw" path="res://Scripts/enemy_1.gd" id="1_unw8j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_04ylt"]
+
+[node name="Enemy1" type="CharacterBody2D"]
+script = ExtResource("1_unw8j")
+
+[node name="TowerDefenseTile245" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_er5oi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_04ylt")
